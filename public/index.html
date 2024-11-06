@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offer Letter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script> <!-- pdf.js library -->
+</head>
+<body>
+  <div class="container">
+    <h1>Offer Letter</h1>
+    <div id="offer-content">
+      <!-- PDF Canvas will be loaded here -->
+    </div>
+    <div id="response-buttons">
+      <button id="accept-button" onclick="respondToOffer('accepted')">Accept</button>
+      <button id="reject-button" onclick="respondToOffer('rejected')">Reject</button>
+    </div>
+    <p id="response-message"></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
